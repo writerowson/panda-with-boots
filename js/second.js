@@ -4,13 +4,21 @@ function handleClickingFunction() {
 }
 
 document.getElementById("handleEvent").addEventListener('click', function () {
-    const h1 = document.getElementById("clicking-method"); h1.innerText = 'Your info is submited'
+    const h1 = document.getElementById("clicking-method");
+    h1.innerText = 'Your info is submited'
 
 })
 
-// delete
-// const deleteBtn = document.getElementsByClassName("delete-btn").addEventListener('click', function () {
-//     document.getElementsByClassName("delete-btn").style.display = 'none'
+// delete btn
+const deletButton = document.getElementsByClassName("delete-btn"); {
+    console.log(deletButton)
+    for (const button of deletButton) {
+        document.addEventListener('click', function () {
+            // button.style.display = 'none'
+            // button.remove()
+            button.parentNode.style.display = "none "
+        })
 
+    }
+}
 
-// })
